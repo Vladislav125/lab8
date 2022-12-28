@@ -1,0 +1,8 @@
+<%= form_with url: '/example/show', method: :get do |form| %>
+  <%= form.label 'Введите число, для которого нужно найти факториал: ', class: 'h6' %>
+  <br>
+  <%= form.text_field :input_value, value: '23' %>
+  <br/><br/>
+  <%= form.submit 'Вывести результат', class: 'btn btn-warning' %>
+<% end %>
+<%= flash[:notice] %>

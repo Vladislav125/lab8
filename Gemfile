@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "rspec-rails", "~> 6.0"
+
+gem "rails-controller-testing", "~> 1.0"
+
+gem "nokogiri", "~> 1.13"

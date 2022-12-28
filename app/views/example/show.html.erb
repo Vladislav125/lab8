@@ -1,0 +1,20 @@
+<div class="container">  
+  <h6><%= @message %></h6>
+  <br><br>
+  <% unless @results.length.zero? %>
+    <table class="table table-bordered">
+      <tr class="table-primary">
+        <th>Факториал</th>
+        <th>Значение факториала</th>
+        <th>Тройка чисел</th>
+      </tr>
+      <% @results.each do |object| %>
+        <tr class="table-secondary">
+          <td><%= object.factorial_number %></td>
+          <td><%= object.factorial_value %></td>
+          <td><%= object.three_numbers %></td>
+        </tr>
+      <% end %>
+    </table>
+  <% end %>
+</div>
